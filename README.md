@@ -1,12 +1,12 @@
-##Steps 
+# Steps 
 
 
-##Backend 
+## Backend 
 - [x] update prisma schema
 - [x] email auth
-- [ ] trpc routes fro todos
+- [x] trpc routes fro todos
  
-##Frontend
+## Frontend
 - [ ] login 
 - [ ] list todos
 - [ ] add todo
