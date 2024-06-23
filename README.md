@@ -2,7 +2,7 @@
 
 
 ##Backend 
-- [] update prisma schema
+- [x] update prisma schema
 - [] email auth
 - [] trpc routes fro todos
 
