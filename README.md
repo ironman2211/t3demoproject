@@ -7,8 +7,8 @@
 - [x] trpc routes fro todos
  
 ## Frontend
-- [ ] login 
-- [ ] list todos
+- [x] login 
+- [x] list todos
 - [ ] add todo
 - [ ] delete todo
 - [ ] update todo

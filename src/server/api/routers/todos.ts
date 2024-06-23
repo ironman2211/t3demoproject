@@ -18,7 +18,7 @@ export const todoRouter = createTRPCRouter({
       {
         id: 2,
         text: "hello world",
-        done: false
+        done: false,
       },
       {
         id: 1,
