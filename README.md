@@ -9,6 +9,6 @@
 ## Frontend
 - [x] login 
 - [x] list todos
-- [ ] add todo
-- [ ] delete todo
-- [ ] update todo
+- [x] add todo
+- [x] update todo
+- [x] delete todo

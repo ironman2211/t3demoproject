@@ -13,19 +13,19 @@ export const todoRouter = createTRPCRouter({
         userId: ctx.session.user.id
       }
     })
-    console.log(todos.map(({ id, text, done }) => ({ id, text, done })));
-    return [
-      {
-        id: 2,
-        text: "hello world",
-        done: false,
-      },
-      {
-        id: 1,
-        text: "hello world 2022",
-        done: false
-      }
-    ]
+    return todos.map(({ id, text, done }) => ({ id, text, done }));
+    // return [
+    //   {
+    //     id: 2,
+    //     text: "hello world",
+    //     done: false,
+    //   },
+    //   {
+    //     id: 1,
+    //     text: "hello world 2022",
+    //     done: false
+    //   }
+    // ]
   }),
   createTodo: protectedProcedure
     .input(todoinput)

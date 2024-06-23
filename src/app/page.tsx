@@ -1,21 +1,21 @@
 import Link from "next/link";
 import { getServerAuthSession } from "~/server/auth";
 import Todos from "./_components/Todos";
+import CreateTodo from "./_components/CreateTodo";
 export default async function Home() {
   const session = await getServerAuthSession();
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
+        
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-center text-2xl text-white">
             {session && <span>Logged in as {session.user?.email}</span>}
           </p>
           {session && (
-            <div className="flex w-[40vw]  flex-col bg-red-100 text-red-900">
+            <div className="flex  flex-col bg-gray-300 text-red-900 items-center gap-5 p-5">
               <Todos />
+              <CreateTodo />
             </div>
           )}
           <Link
